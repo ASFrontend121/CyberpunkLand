@@ -356,4 +356,274 @@ a {
   font-size: 18px;
   line-height: 189%;
   color: #52bedc;
+}
+
+.games {
+  position: relative;
+  padding-bottom: 70px;
+  background-color: var(--black-color);
+}
+.games::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-image: url("../img/background-top.png");
+}
+.games__block {
+  padding-top: 70px;
+}
+.games__block-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 25px;
+}
+.games__action {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 132px;
+  height: 132px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  color: #f8f200;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.games__action::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 132px;
+  height: 132px;
+  background-image: url("../img/back.svg");
+  -webkit-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+.games__title {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 62px;
+  color: var(--light-color);
+}
+.games__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 952px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 189%;
+  color: var(--light-color);
+}
+.games__subtitle span {
+  font-weight: 700;
+  color: var(--accent-color);
+}
+.games__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  height: 456px;
+}
+.games__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  max-width: 460px;
+}
+.games__prize {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  padding-top: 25px;
+  padding-left: 164px;
+}
+.games__prize::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 460px;
+  height: 456px;
+  background-image: url("../img/back-xbox.png");
+  background-repeat: no-repeat;
+}
+.games__prize::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 460px;
+  height: 456px;
+  background-image: url("../img/back-ps.png");
+  background-repeat: no-repeat;
+}
+
+.image__prize {
+  position: relative;
+  z-index: 5;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 35px;
+  min-width: 460px;
+}
+.form__input {
+  padding: 0;
+  padding-bottom: 13px;
+  width: 460px;
+  border-bottom: 1px solid #777;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--light-color);
+  background-color: transparent;
+  outline: none;
+}
+.form__input::-webkit-input-placeholder {
+  margin-bottom: 13px;
+}
+.form__input::-moz-placeholder {
+  margin-bottom: 13px;
+}
+.form__input:-ms-input-placeholder {
+  margin-bottom: 13px;
+}
+.form__input::-ms-input-placeholder {
+  margin-bottom: 13px;
+}
+.form__input::placeholder {
+  margin-bottom: 13px;
+}
+.form__label-file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 460px;
+  height: 120px;
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  color: var(--light-color);
+  border: 1px dashed #777;
+  cursor: pointer;
+}
+.form__label-file span {
+  display: block;
+}
+.form__file {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px 50px;
+  min-height: 59px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--black-color);
+  background: #f8f200;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.form__btn:hover {
+  background-color: var(--accent-color);
+}
+
+.custom-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 12px;
+  color: var(--light-color);
+}
+.custom-checkbox span {
+  font-size: 14px;
+  color: var(--light-color);
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.checkbox-box {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #777;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.checkbox-input:checked + .checkbox-box::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 10px;
+  height: 7px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  border-width: 0 3px 3px 0;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
