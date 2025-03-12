@@ -626,4 +626,194 @@ a {
   background-repeat: no-repeat;
   border-width: 0 3px 3px 0;
   opacity: 1;
+}
+
+.hp {
+  position: relative;
+  padding-bottom: 70px;
+  background: #f8f200;
+}
+.hp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-image: url("../img/background-bottom.png");
+}
+.hp__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  padding-top: 140px;
+}
+.hp__block-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 26px;
+}
+.hp__block-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 25px;
+}
+.hp__block-partners span {
+  display: block;
+  width: 92px;
+  height: 21px;
+  background-image: url("../img/group-svg.svg");
+  background-repeat: no-repeat;
+}
+.hp__block-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 624px;
+}
+.hp__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 62px;
+  color: var(--black-color);
+}
+.hp__subtitle {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 189%;
+  color: var(--black-color);
+}
+.hp__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.hp__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.hp__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 15px 50px;
+  min-height: 59px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f8f200;
+  background-color: var(--black-color);
+  -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.hp__btn:hover {
+  color: var(--black-color);
+  background-color: var(--accent-color);
+}
+
+.buy {
+  max-height: 717px;
+  background-color: var(--black-color);
+}
+.buy__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+.buy__content {
+  padding: 70px 0;
+}
+.buy__title {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 624px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 62px;
+  color: var(--light-color);
+}
+.buy__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+.buy__list-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+.buy__list-platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 45px;
+  max-width: 319px;
+}
+.buy__list-platform--title {
+  margin-bottom: 25px;
+}
+.buy__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--light-color);
 }/*# sourceMappingURL=main.css.map */
